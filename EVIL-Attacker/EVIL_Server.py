@@ -365,9 +365,6 @@ def index():
 		
 @app.route("/getoptions", methods=["GET","POST"])
 def getoptions():
-	newToast.text_fields = ['Authentication started', 'Look towards camera']
-	toaster.show_toast(newToast)
-
 	opt= request.json
 	url=request.args.get('site')
 	options=makeOptions(opt);
@@ -379,8 +376,6 @@ def getoptions():
 	
 @app.route("/getcreate", methods=["GET","POST"])
 def getcreate():
-	newToast.text_fields = ['Registration started', 'Look towards camera']
-	toaster.show_toast(newToast)
 	opt= request.json
 	url=request.args.get('site')
 	options=makeCreateOptions(opt)
