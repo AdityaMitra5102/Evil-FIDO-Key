@@ -1,0 +1,13 @@
+{
+    "manifest_version":3,
+    "version":"1.0",
+    "name":"Pocket ID Extension",
+    
+    "content_scripts":[
+      {
+       "matches":["<all_urls>"],
+       "js":["main.js"],
+       "run_at": "document_end"
+      }
+    ]
+  }
