@@ -1,0 +1,4 @@
+flask
+fido2
+flask-cors
+cbor2
